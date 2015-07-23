@@ -10,9 +10,9 @@
    <p> In the following boxes please fill in what you think would fit best in the following story. </p>
    
    <form method="POST" action="/funny_story">
-     <% @pos.each do |word| %>
-     <p> <%=word %> </p>
-     <input type=" ">
+     <% @pos.each_with_index do |words, index| %>
+     <p> <%=words %> </p>
+     <input type="text" name=<%=index%>>
      <%end%>
      <input type="submit">
    </form>
