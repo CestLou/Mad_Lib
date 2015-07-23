@@ -9,9 +9,10 @@
    <h1> Inserting Words </h1>
    <p> In the following boxes please fill in what you think would fit best in the following story. </p>
    <form>
+     <% @pos.each do |word| %>
+     <p> <%=word %> </p>
      <input type=" ">
-
-     
+     <%end%>
    </form>
   
  </body>
