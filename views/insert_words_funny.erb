@@ -8,11 +8,13 @@
  <body>
    <h1> Inserting Words </h1>
    <p> In the following boxes please fill in what you think would fit best in the following story. </p>
-   <form>
+   
+   <form method="POST" action="/funny_story">
      <% @pos.each do |word| %>
      <p> <%=word %> </p>
      <input type=" ">
      <%end%>
+     <input type="submit">
    </form>
   
  </body>
