@@ -20,9 +20,9 @@ class ApplicationController < Sinatra::Base
     erb :insert_words_adventure
   end
   
-  get '/hunted_form' do
-    @pos=Hunted.new.pos
-    erb :insert_words_hunted
+  get '/haunted_form' do
+    @pos=Haunted.new.pos
+    erb :insert_words_haunted
   end
 
 end
