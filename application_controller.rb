@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
   
   post '/haunted_story' do
     user_input=params[:words]
-    @pos=Haunted.new.pos(user_input)
+    @pos=Haunted.new(user_input)
     erb :haunted_story
   end
 
