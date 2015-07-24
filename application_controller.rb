@@ -42,6 +42,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/haunted_story' do
+#     params[:words]
     user_input=params[:words]
     @pos=Haunted.new(user_input)
     erb :haunted_story

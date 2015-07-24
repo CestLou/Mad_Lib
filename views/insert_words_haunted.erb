@@ -41,9 +41,9 @@
    
 
    <form method="POST" action="/haunted_story">
-     <% @pos.each do |words| %>
+     <% @pos.each do |words, index| %>
      <p> <%=words %> </p>
-     <input type="text" name="<%words%>">
+     <input type="text" name="<%=words%>">
      <%end%>
      <input type="submit">
    </form>
