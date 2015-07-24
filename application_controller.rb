@@ -41,10 +41,10 @@ class ApplicationController < Sinatra::Base
     erb :insert_words_haunted
   end
   
-#   post '/haunted_story' do
-#     user_input=params[:words]
-#     @pos=Haunted.new.pos(user_input)
-#     erb :haunted_story
-#   end
+  post '/haunted_story' do
+    user_input=params[:words]
+    @pos=Haunted.new.pos(user_input)
+    erb :haunted_story
+  end
 
 end

@@ -9,7 +9,8 @@
    <h1> Inserting Words </h1>
    <p> In the following boxes please fill in what you think would fit best in the following story. </p>
 
-   <form method="POST" action="/funny_story">
+<!--
+   <form method="POST" action="/funny_story"> change funny to haunted
      
      <textarea name="words" rows="10" cols="50">Write 1 proper noun here</textarea>
      <input type="submit">
@@ -36,16 +37,16 @@
      <input type="submit">
 
    </form>
+-->   
    
-   
-<!--
+
    <form method="POST" action="/haunted_story">
-     <% @pos.each do |word| %>
-     <p> <%=word %> </p>
-     <input type=" ">
+     <% @pos.each do |words| %>
+     <p> <%=words %> </p>
+     <input type="text" name="<%words%>">
      <%end%>
      <input type="submit">
    </form>
--->
+
  </body>
 </html>
