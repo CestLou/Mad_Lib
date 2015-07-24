@@ -16,10 +16,9 @@ class ApplicationController < Sinatra::Base
   end
     
   post '/funny_story' do
-    params[:words]
-    #user_input=params[:words]
-    #@pos=Funny.new(user_input)
-    #erb :funny_story
+    @user_input=params
+    @pos=Funny.new.pos
+    erb :funny_story
   end
    
 #
@@ -29,11 +28,11 @@ class ApplicationController < Sinatra::Base
     erb :insert_words_adventure
   end
     
-#   post '/adventure_story' do
-#     user_input=params[:words]
-#     @pos=Adventure.new(user_input)
-#     erb :adventure_story
-#   end
+  post '/adventure_story' do
+    @user_input=params
+    @pos=Adventure.new.pos
+    erb :adventure_story
+  end
 #
 #
   get '/haunted_form' do
@@ -42,9 +41,8 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/haunted_story' do
-#     params[:words]
-    user_input=params[:words]
-    @pos=Haunted.new(user_input)
+    @user_input=params
+    @pos=Haunted.new.pos
     erb :haunted_story
   end
 

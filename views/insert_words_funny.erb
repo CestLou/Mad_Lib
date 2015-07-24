@@ -10,29 +10,12 @@
    <p> In the following boxes please fill in what you think would fit best in the following story. </p>
    
    <form method="POST" action="/funny_story">
-     
-     <textarea name="words" rows="10" cols="50">Write 12 nouns here</textarea>
-     <input type="submit">
-     
-     <textarea name="words" rows="10" cols="50">Write 7 verb here</textarea>
-     <input type="submit">
-     
-     <textarea name="words" rows="10" cols="50">Write 6 adjectives here</textarea>
-     <input type="submit">
-
-   </form>
-   
-   
-<!--
-   <form method="POST" action="/funny_story">
-     <% @pos.each_with_index do |words, index| %>
+     <% @pos.each do |words| %>
      <p> <%=words %> </p>
-     <input type="text" name=<%=index%>>
-            
+     <input type="text" name="<%=words%>">
      <%end%>
      <input type="submit">
    </form>
--->
-  
+
  </body>
 </html>
