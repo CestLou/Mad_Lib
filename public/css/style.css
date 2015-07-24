@@ -1,13 +1,49 @@
-/* p { color: red;
-  font-size: 25px}
 
-#copy_and_paste_info {
-  color: green;
-  font-size: 50px
-} */
+  #specific {
+    color: White;
+    font-family: 'Tangerine', cursive;
+    font-size: 70px
+    }
+.fun {
+  background: #bacde7;
+  font-family: 'Tangerine', cursive;}
 
-.page-header{
+.strawberries{
+  background: #bacde7;
+  font-family: 'Tangerine', cursive;
+  font-size: 20px
+  
+}
+
+.guava {
+  font-size: 20px
+}
+
+.bananas{
+  color: gray;
+    font-family: 'Tangerine', cursive;
+  font-size: 40px
+}
+
+.pears{
+  color: white;
+    font-family: 'Tangerine', cursive;
+  font-size: 40px
+  
+}
+
+.apples{
+  color: white;
+    font-family: 'Tangerine', cursive;
+  font-size: 40px
+}
+
+.oranges{
+  color: white;
+    font-family: 'Tangerine', cursive;
+  font-size: 40px
+}
+
+body{
   text-align: center;
-  font-family: wingdings;
-  background-color: blue  
 }
