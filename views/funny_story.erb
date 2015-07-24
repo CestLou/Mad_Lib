@@ -4,8 +4,41 @@
   <meta charset="UTF-8">
   <title>Mad Libs</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   
  </head>
  <body>
+   
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href='/'>Home</a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href='/haunted_form'>Haunted</a>
+                    </li>
+                    <li>
+                        <a href='/adventure_form'>Adventurous</a>
+                    </li>
+                    <li>
+                        <a href='/funny_form'>Funny</a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+  </div>
+   </div>
+   
+   
    <h2> Mad Libs </h2>
    <h1> Al Bino The Boy Wonder </h1>
    <p> Once upon a time, there was a little <%= @user_input[@pos[0]] %> by the name of Al Bino. Al was a rather <%= @user_input[@pos[1]] %> kid, In school everyone would call him <%= @user_input[@pos[2]] %>. One day in class Al Bino got bored and doodled a <%= @user_input[@pos[3]] %> in his notebook. The <%= @user_input[@pos[4]] %> had the power to <%= @user_input[@pos[5]] %> anything it wanted. The more Al Bino doodled, the more <%= @user_input[@pos[6]] %> his doodles got. he <%= @user_input[@pos[7]] %> the idea where he became a witch concocting <%= @user_input[@pos[8]] %> for a living. Al Bino drew a  <%= @user_input[@pos[9]] %> which he could put all of his <%= @user_input[@pos[10]] %> into. First he put a little of <%= @user_input[@pos[11]] %>, then some <%= @user_input[@pos[12]] %> and finally, just a dash of <%= @user_input[@pos[13]] %>. This potion was so <%= @user_input[@pos[14]] %> that it was able to <%= @user_input[@pos[15]] %> anyone just by <%= @user_input[@pos[16]] %> it. The teacher noticed Al Bino was not paying attention and <%= @user_input[@pos[17]] %> a <%= @user_input[@pos[18]] %> on his desk and <%= @user_input[@pos[19]] %> his notebook and <%= @user_input[@pos[20]] %> it in the <%= @user_input[@pos[21]] %>. Al Bino got <%= @user_input[@pos[22]] %>! He went into his <%= @user_input[@pos[23]] %> and <%= @user_input[@pos[24]] %> out a <%= @user_input[@pos[25]] %>. The teacher was so <%= @user_input[@pos[26]] %> that he left the room <%= @user_input[@pos[27]] %>, leaving the notebook all to Al Bino.

@@ -4,8 +4,41 @@
   <meta charset="UTF-8">
   <title>Mad Libs</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   
  </head>
  <body>
+   
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href='/'>Home</a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href='/haunted_form'>Haunted</a>
+                    </li>
+                    <li>
+                        <a href='/adventure_form'>Adventurous</a>
+                    </li>
+                    <li>
+                        <a href='/funny_form'>Funny</a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+  </div>
+   </div>
+   
+   
    <h1> Inserting Words </h1>
    <p> In the following boxes please fill in what you think would fit best in the following story. </p>   
 
@@ -15,6 +48,16 @@
      <input type="text" name="<%=words%>">
      <%end%>
      <input type="submit">
+     
+     
+     <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
  
+     
+     
  </body>
 </html>
